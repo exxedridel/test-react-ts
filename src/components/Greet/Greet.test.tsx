@@ -8,16 +8,13 @@ describe('Greet', () => {
       const textElement = screen.getByText(/hello/i)
       expect(textElement).toBeInTheDocument()
    })
-
+   // test('Renders with a name', () => { // test.only(), test.skip()
+   //    render(<Greet name='Heved' />)
+   //    const textElement = screen.getByText('Hello Heved')
+   //    expect(textElement).toBeInTheDocument()
+   // })
 })
 
-describe('Nested', () => {
-   test('Renders a name', () => { // test.only(), test.skip()
-      render(<Greet name='Heved' />)
-      const textElement = screen.getByText('Hello Heved')
-      expect(textElement).toBeInTheDocument()
-   })
-})
 // Several describes is also posible but test suites is still 1 per file
 
 
